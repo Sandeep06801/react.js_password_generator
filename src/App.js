@@ -27,7 +27,7 @@ const App = () => {
     else if(passwordLength > 999) {
       notify("Password length must be less than 999", true);
     }
-    else if (repeatCharacters && !includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
+    else if (!includeUpperCase && !includeLowerCase && !includeNumbers && !includeSymbols) {
       notify("To generate password you must select atleast one checkbox", true);
     }
     else {
@@ -113,7 +113,6 @@ const App = () => {
         return 'black';
     }
   }
-
   const getPasswordStrength = () => {
     if (passwordSizeBits <= 16) {
       return 'Very Low';
