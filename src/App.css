@@ -18,13 +18,13 @@
   padding: 30px;
   max-width: 500px;
   width: 100%;
-  
 }
 
 .generator-header{
   text-align: center;
   color: white;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .generator-password{
@@ -58,6 +58,7 @@
   border-radius: 30px;
   align-items: center;
   font-size: 17px;
+  font-weight: bold;
 }
 
 .generator-btn{
@@ -70,6 +71,7 @@
   border-radius: 30px;
   font-size: 17px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .placeholder {

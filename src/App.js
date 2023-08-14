@@ -140,7 +140,7 @@ const App = () => {
       notify("Password successfully copied to clipboard.");
     }
   }
-
+  
   return (
     <div className="App">
       <div className="container">
@@ -166,11 +166,11 @@ const App = () => {
             <input checked={includeLowerCase} onChange={(e) => setIncludeLowerCase(e.target.checked)} type="checkbox" id="lowercase-letters" name="lowercase-letters" />
           </div>
           <div className="form-group">
-            <label htmlFor="include-numbers">Include Numbers</label>
+            <label htmlFor="include-numbers">Add Numbers</label>
             <input checked={includeNumbers} onChange={(e) => setIncludeNumbers(e.target.checked)} type="checkbox" id="include-numbers" name="include-numbers" />
           </div>
           <div className="form-group">
-            <label htmlFor="include-symbols">Include Special Characters</label>
+            <label htmlFor="include-symbols">Add Special Characters</label>
             <input checked={includeSymbols} onChange={(e) => setIncludeSymbols(e.target.checked)} type="checkbox" id="include-symbols" name="include-symbols" />
           </div>
           <div className="form-group">
