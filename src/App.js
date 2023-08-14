@@ -53,7 +53,6 @@ const App = () => {
   const createPassword = (characterList) => {
     let password = "";
     const characterListLength = characterList.length;
-    
     if (repeatCharacters) {
       for (let i = 0; i < passwordLength; i++) {
         const characterIndex = Math.round(Math.random() * (characterListLength - 1));
@@ -63,7 +62,6 @@ const App = () => {
       const shuffledCharacters = characterList.split('').sort(() => 0.5 - Math.random()).join('');
       password = shuffledCharacters.substring(0, passwordLength);
     }
-  
     return password;
   };  
   const notify = (message, hasError = false) => {
@@ -115,6 +113,7 @@ const App = () => {
         return 'black';
     }
   }
+
   const getPasswordStrength = () => {
     if (passwordSizeBits <= 16) {
       return 'Very Low';
@@ -130,6 +129,7 @@ const App = () => {
         return 'Ultra Strong';
     }
   }
+
   const clipboard = useClipboard();
   const handleCopyPassword = (e) => {
     if (password === "") {
@@ -140,6 +140,7 @@ const App = () => {
       notify("Password successfully copied to clipboard.");
     }
   }
+
   return (
     <div className="App">
       <div className="container">
@@ -181,7 +182,6 @@ const App = () => {
               name="custom-special-characters"
             />
           </div>
-
           <button onClick={handleGeneratePassword} className="generator-btn">
             Generate Password
           </button>
